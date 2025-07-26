@@ -1,0 +1,319 @@
+text,label
+"2.5
+Run the DISM GUI Tool
+3.5
+Run the DISM Command Line Tool
+You may not use or facilitate the use of this document in connection with any infringement or other legal analysis concerning Intel products
+described herein. You agree to grant Intel a non-exclusive, royalty-free license to any patent claim thereafter drafted which includes subject
+matter disclosed herein.
+2. Add USB 3.0 Drivers to install.wim Image
+5. Add USB 3.0 Drivers to boot.wim Image
+8. Add USB 3.0 Drivers to boot.wim Image
+Contents
+Revision History
+1.0
+Introduction
+2.0
+DISM Graphical User Interface (GUI) Tool
+3.0
+DISM Command Line Tool
+4. Mount boot.wim Image Index 1 (Windows PE)
+7. Mount boot.wim Image Index 2 (Windows Setup)
+10. Copy Modified WIM files Back to the USB Flash Drive Installer
+a)
+On the Driver Management tab, click the Choose Driver Folder
+button.
+b)
+Select the location of your USB 3.0 drivers and click OK.
+c)
+Verify the Recurse checkbox is selected.
+d)
+If your drivers are unsigned or reported to be unsigned, select the
+Force Unsigned checkbox.
+e)
+Click the Add Drivers button.
+a)
+On the Driver Management tab, all options should still be set up
+from adding them to the previous image. If not, click the Choose
+Driver Folder button. Select the location of your USB 3.0 drivers and
+click OK.
+b)
+Verify the Recurse checkbox is selected.
+c)
+If your drivers are unsigned or reported to be unsigned, select the
+Force Unsigned checkbox.
+d)
+Click the Add Drivers button.
+a)
+On the Driver Management tab, all options should still be set up from
+adding them to the previous image. If not, click the Choose Driver
+Folder button. Select the location of your USB 3.0 drivers and click
+OK.
+b)
+Verify the Recurse checkbox is selected.
+c)
+If your drivers are unsigned or reported to be unsigned, select the
+Force Unsigned checkbox.
+d)
+Click the Add Drivers button.
+Commit changes to
+boot.wim image and
+unmount
+1. Open an Administrator Command Prompt window.
+a)
+On the Mount Control tab, click the Choose WIM button.
+b)
+Navigate to where you copied boot.wim (C:\WIM in the example) and
+click Open.
+c)
+Choose index number 1 (for Windows PE) from the drop-down list
+under Index.
+d)
+The Mount Location should still contain the appropriate folder. If not,
+click the Choose Folder button for the Mount Location. Browse to
+the proper folder (C:\WIM\MOUNT, for example) and click OK.
+e)
+Verify the Read Only checkbox is clear and click the Mount WIM
+button.
+a)
+On the Mount Control tab, you should see boot.wim still listed as
+the WIM file from the previous step. If not, click the Choose WIM
+button. Navigate to where you copied boot.wim (C:\WIM, for
+example) and click Open.
+b)
+Choose index number 2 (for Windows Setup) from the drop-down list
+under Index.
+c)
+The Mount Location should still contain the appropriate folder. If not,
+click the Choose Folder button for the Mount Location. Browse to
+the proper folder (C:\WIM\MOUNT, for example) and click OK.
+d)
+Verify the Read Only checkbox is clear and click the Mount WIM
+button.
+a)
+Copy the newly modified install.wim and boot.wim files back to the
+\sources directory of the Windows 7 USB Flash Drive Installer,
+overwriting the original files.
+b)
+Eject and remove the USB Flash Drive from the Admin system.
+dism.exe /Unmount-wim /mountdir:""C:\WIM\MOUNT"" /commit
+Right-click on DISM GUI.exe and select Run as Administrator. Follow these steps:
+No license (express or implied, by estoppel or otherwise) to any intellectual property rights is granted by this document.
+Windows 7 installation media doesn’t include native driver support for USB 3.0.
+When installing Windows 7, on the screen to select your preferred language, a
+keyboard or mouse connected to a USB 3.0 port doesn’t respond. Any Intel® NUC
+that has only USB 3.0 ports is affected.
+This document describes two methods to resolve the problem:
+The DISM Graphical User Interface (GUI) Tool updates a Windows 7 installation
+image so that it contains USB 3.0 drivers.
+1.0
+Introduction ............................................................................................................................. 5
+The DISM Command Line Tool updates a Windows 7 installation image so that it contains
+USB 3.0 drivers.
+All information provided here is subject to change without notice. Contact your Intel representative to obtain the latest Intel product
+specifications and roadmaps.
+1. Mount install.wim Image
+Date
+Revision
+Description
+2.0
+DISM Graphical User Interface (GUI) Tool ............................................................ 6
+Mount boot.wim
+image Index 2
+(Windows Setup)
+a)
+On the Mount Control tab, click the Choose WIM button.
+b)
+Navigate to where you copied install.wim (C:\WIM, for example) and
+click Open.
+c)
+Choose the index number for the version of Windows 7 you have
+from the drop-down list under Index.
+dism.exe /Mount-WIM /WimFile:""C:\WIM\boot.wim"" /index:2 /MountDir:""C:\WIM\MOUNT""
+2.1
+Assumptions ...................................................................................................................................................... 6
+2.2
+Create the USB Flash Drive Installer ............................................................................................... 6
+2.3
+Copy install.wim and boot.wim to the Admin System ......................................................... 6
+2.4
+Get the Latest USB 3.0 Drivers ........................................................................................................... 6
+2.5
+Run the DISM GUI Tool ............................................................................................................................. 7
+2.6
+Install Windows 7 on the Target Computer ............................................................................. 13
+June 2018
+1.0
+Initial release.
+The products described may contain design defects or errors known as errata which may cause the product to deviate from published
+specifications. Current characterized errata are available on request.
+Install Windows 7* on USB 3.0 Computers
+2.6
+Install Windows 7 on the Target Computer
+3.1
+Assumptions
+2.1
+Assumptions
+Using the updated installer, proceed with the Windows 7 installation as you normally
+would.
+
+You have a valid copy of Windows 7 on ISO or DVD.
+
+You have Administrator access to another working computer (the Admin system) with
+Windows 7 or later to follow these steps.
+
+The Admin system has at least 10GB free disk space.
+Copies of documents which have an order number and are referenced in this document may be obtained by calling 1-800-548-4725 or by
+visiting:  http://www.intel.com/design/literature.htm.
+
+You have a valid copy of Windows 7 on ISO or DVD.
+
+You have Administrator access to another working computer (the Admin system)
+with Windows 7 or later to follow these steps.
+
+The Admin system has .NET Framework 4.0 installed.
+
+The Admin system has at least 10GB free disk space.
+
+You’ve downloaded and installed the DISM GUI from https://dismgui.codeplex.com/.
+Add USB 3.0 drivers
+to boot.wim image
+dism.exe /image:""C:\WIM\MOUNT"" /Add-Driver /driver:""C:\WIM\USB3\x64"" /ForceUnsigned /recurse
+1 = Home Basic
+2 = Home Premium
+3 = Professional
+4 = Ultimate
+d)
+Click the Choose Folder button for the Mount Location. Browse to
+the proper folder (C:\WIM\MOUNT, for example) and click OK.
+e)
+Verify the Read Only checkbox is clear and click the Mount WIM
+button.
+Intel and the Intel logo are trademarks of Intel Corporation or its subsidiaries in the U.S. and/or other countries.
+
+DISM Graphical User Interface (GUI) Tool
+
+DISM Command Line Tool
+User Guide
+August 2018
+*Other names and brands may be claimed as the property of others.
+Commit changes to
+boot.wim image and
+unmount
+3.0
+DISM Command Line Tool ..............................................................................................14
+dism.exe /Unmount-wim /mountdir:""C:\WIM\MOUNT"" /commit
+Copyright © 2018, Intel Corporation. All rights reserved.
+3.1
+Assumptions ................................................................................................................................................... 14
+3.2
+Create the USB Flash Drive Installer ............................................................................................ 14
+3.3
+Copy install.wim and boot.wim to the Admin System ...................................................... 14
+3.4
+Get the Latest USB 3.0 Drivers ........................................................................................................ 14
+3.5
+Run the DISM Command Line Tool ................................................................................................ 15
+3.6
+Copy Modified WIM Files to the USB Flash Drive Installer ............................................ 16
+3.7
+Install Windows 7 on the Target Computer ............................................................................. 16
+3.2
+Create the USB Flash Drive Installer
+1. Use your Windows 7 DVD or ISO image to create a bootable USB flash drive.
+3.6
+Copy Modified WIM Files to the USB Flash Drive Installer
+2.2
+Create the USB Flash Drive Installer
+2. Enter each of the following DISM command lines in turn:
+Instructions on how to do are found on Microsoft’s site.
+2. Leave the flash drive connected to your administrator console system.
+1. Copy the newly modified install.wim and boot.wim files back to the \sources
+1. Use your Windows 7 DVD or ISO image to create a bootable USB flash drive.
+directory of the Windows 7 USB Flash Drive Installer, overwriting the original
+files.
+2. Eject and remove the USB Flash Drive from the Admin system.
+Instructions on how to do are found on Microsoft’s site.
+2. Leave the flash drive connected to your administrator console system.
+Action
+DISM command line
+3.3
+Copy install.wim and boot.wim to the Admin System
+1. Create a temporary working directory on the Admin system, such as C:\WIM.
+2. Create a mount point under your working directory: C:\WIM\MOUNT.
+3. Locate the boot.wim and install.wim image files in the \sources directory on
+dism.exe /Mount-WIM /WimFile:""C:\WIM\install.wim"" /index:4 /MountDir:""C:\WIM\MOUNT""
+Set /index: to 1 – 4 depending, on the version of Windows 7 you have:
+1 = Home Basic
+2 = Home Premium
+3 = Professional
+4 = Ultimate
+2.3
+Copy install.wim and boot.wim to the Admin System
+3.7
+Install Windows 7 on the Target Computer
+Mount the install.wim
+image
+3. Commit Changes to install.wim Image and Unmount
+1. Create a temporary working directory on the Admin system, such as C:\WIM.
+2. Create a mount point under your working directory: C:\WIM\MOUNT.
+3. Locate the boot.wim and install.wim image files in the \sources directory on
+Using the updated installer, proceed with the Windows 7 installation as you normally
+would.
+9. Commit Changes to boot.wim Image and Unmount
+6. Commit Changes to boot.wim Image and Unmount
+a)
+On the Mount Control tab, click the Dismount WIM button.
+b)
+Select Yes to commit the changes. This may take a few minutes.
+your Windows 7 flash drive.
+4. Copy both these files to your working directory. We recommend you make a
+a)
+On the Mount Control tab, click the Dismount WIM button.
+b)
+Select Yes to commit the changes. This will take about 30 seconds
+to finish.
+a)
+On the Mount Control tab, click the Dismount WIM button.
+b)
+Select Yes to commit the changes. This will take about 30 seconds
+to finish.
+second unmodified copy of these files.
+your Windows 7 flash drive.
+4. Copy both these files to your working directory. We recommend you make a
+Add USB 3.0 drivers
+to the install.wim
+image
+dism.exe /image:""C:\WIM\MOUNT"" /Add-Driver /driver:""C:\WIM\USB3\x64"" /ForceUnsigned /recurse
+3.4
+Get the Latest USB 3.0 Drivers
+second unmodified copy of these files.
+1. Download the current USB 3.0 drivers for your Intel NUC from Download Center
+2.4
+Get the Latest USB 3.0 Drivers
+Commit changes to
+install.wim image and
+unmount
+to the Admin system.
+2. Extract but don’t install the USB 3.0 driver package.
+3. Create a driver folder in your working directory for the 64-bit drivers
+dism.exe /Unmount-wim /mountdir:""C:\WIM\MOUNT"" /commit
+1. Download the current USB 3.0 drivers for your Intel NUC from Download Center
+The mounting process may take a few minutes, depending upon the speed of the
+Admin system and the size of the install.wim file.
+to the Admin system.
+2. Extract but don’t install the USB 3.0 driver package.
+3. Create a driver folder in your working directory for the 64-bit drivers
+(C:\WIM\USB3\).
+4. Copy the x64 folder from the extracted files to that location
+Mount boot.wim
+image Index 1
+(Windows PE)
+dism.exe /Mount-WIM /WimFile:""C:\WIM\boot.wim"" /index:1 /MountDir:""C:\WIM\MOUNT""
+(C:\WIM\USB3\x64\).
+(C:\WIM\USB3\).
+4. Copy the x64 folder from the extracted files to that location
+Add USB 3.0 drivers
+to boot.wim image
+dism.exe /image:""C:\WIM\MOUNT"" /Add-Driver /driver:""C:\WIM\USB3\x64"" /ForceUnsigned /recurse
+(C:\WIM\USB3\x64\).",OSTALO

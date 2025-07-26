@@ -1,0 +1,324 @@
+text,label
+"LEGENDA
+GRANICE
+GRANICA GRADA
+DRŽAVNA GRANICA
+GRANICA NASELJA
+OBUHVAT PROSTORNOG PLANA
+GRAĐEVINSKO PODRUČJE NASELJA
+IZGRAĐENI DIO GRAĐEVINSKOG PODRUČJA NASELJA
+NEIZGRAĐENI DIO GRAĐEVINSKOG PODRUČJA NASELJA
+ZAŠTITNE ZELENE POVRŠINE
+MJEŠOVITA NAMJENA
+pretežito stambena - M1, pretežito poslovna - M2
+M
+JAVNA I DRUŠTVENA NAMJENA
+D
+javna i društvena-D,
+GOSPODARSKA NAMJENA
+PROIZVODNA
+I1
+pretežito industrijska - I1, pretežito zanatska - I2, farme (izgrađene) - I3
+L-67044
+UGOSTITELJSKO-TURISTIČKA
+T
+ugostiteljsko-turistička - T, kamp - T3
+POSLOVNA NAMJENA
+K1
+pretežito uslužna - K1, pretežito trgovačka - K2, komunalno servisna - K3
+uslužna (rehabilitacijski centar) - K5, pretežito industrijska - I1, društvena - D
+R1
+ŠPORTSKO-REKREACIJSKA NAMJENA
+šport -R2, rekreacija-R3
+T1
+T2
+T2
+I3
+GROBLJE
+RAZVOJ I UREĐENJE POVRŠINE IZVAN NASELJA
+PROIZVODNA
+I1
+pretežito industrijska - I1, pretežito zanatska - I2, farme (izgrađene) - I3
+L-67045
+ROŽE
+reciklažno dvorište-RD
+VRABAČ
+POVRŠINA ZA ISKORIŠTAVANJE MINERALNIH SIROVINA
+E3
+L-67046
+POSLOVNA NAMJENA
+K1
+pretežito uslužna - K1, pretežito trgovačka - K2, komunalno servisna - K3,
+VOŠTANE
+UGOSTITELJSKO TURISTIČKA NAMJENA
+T1
+hoteli - T1, turističko naselje - T2,
+I1
+GRAB
+R1
+ŠPORTSKO-REKREACIJSKA NAMJENA
+šport - R2, rekreacija-R3
+PODI
+IS
+POVRŠINE INFRASTRUKTURNIH SUSTAVA
+Ž-6082
+GRAĐEVINA ZA GOSPODARENJE OTPADOM
+reciklažno dvorište- RD, skladište otpada- S
+POVRŠINE  IZVAN GRAĐEVINSKOG PODRUČJA
+L-67047
+R4
+ŠPORTSKO-REKREACIJSKA NAMJENA
+H
+kupalište- R4
+K2
+R2
+ŠPORTSKO-REKREACIJSKA NAMJENA
+šport - R2,
+KRIVODOL
+R3
+D-60
+R3
+I2
+I3
+LJUT
+PODRUČJA ZA GRADNJU STAMBENIH I GOSPODARSKIH GRAĐEVINA
+IZVAN GRAĐEVINSKOG PODRUČJA
+R2
+L-67048
+1.
+POLJOPRIVREDNO TLO ISKLJUČIVO OSNOVNE NAMJENE
+T
+L-67042
+OSOBITO VRIJEDNO OBRADIVO TLO
+L-67228
+VRIJEDNO OBRADIVO TLO
+Ž-6125
+D-220
+OSTALA OBRADIVA TLA
+R2
+K1
+JABUKA
+ŠUMA ISKLJUČIVO OSNOVNE NAMJENE
+KOŠUTE
+K1
+K3 R2
+ZAŠTITNA ŠUMA
+D-220
+R4
+OSTALO POLJOPRIVREDNO TLO, ŠUME I ŠUMSKO ZEMLJIŠTE
+I3
+D
+VELIĆ
+R3
+VEDRINE
+Ex
+EKSPLOATACIJSKO POLJE
+I3
+R4
+D-60
+RECIKLAŽNO DVORIŠTE ZA NEOPASNI GRAĐEVINSKI OTPAD
+GO
+Ž-6124
+K3
+Ex
+M2
+I1
+D
+I2
+POVRŠINE AKVAKULTURE - pastrvski ribnjak
+H
+TRILJ
+P
+VODENE POVRŠINE
+D-220
+Ex
+VODENE POVRŠINE
+PT3
+KAMENSKO
+I3
+PROMET
+Ž-6146
+Ž-6124
+L-67089
+CESTOVNI PROMET
+K3
+K2 K3
+VOJNIĆ SINJSKI
+JAVNE CESTE
+L-67082
+K2
+postojeće   planirano
+L-67104
+GARDUN
+A-1
+R2
+L-67083
+DRŽAVNA  AUTOCESTA
+OSTALE DRŽAVNE CESTE
+D-220
+Ž-6149
+D-220
+R3
+I2 K3
+D-220
+IS
+ALTERNATIVNA TRASA OSTALE DRŽAVNE CESTE
+VRPOLJE
+K3
+ČAČVINA
+UREĐENJE KRITIČNE DIONICE DRŽAVNE CESTE
+L-67042
+I3
+Ž-6149
+ŽUPANIJSKA CESTA
+L-67089
+I3
+LOKALNA CESTA
+I1
+L-67049
+I1
+I2
+OSTALE CESTE KOJE NISU KATEGORIZIRANE
+TIJARICA
+K1
+I3
+Ž-6154
+MOST / VIJADUKT
+L-67084
+T2
+K2 K3
+D-60
+TUNEL
+Ž-6148
+R2
+STRMENDOLAC
+L-67090
+I3
+KRIŽANJE VIŠE RAZINE USLUGE
+RASKRIŽJE CESTA U DVIJE RAZINE /
+Ž-6148
+STALNI GRANIČNI CESTOVNI PRIJELAZ
+PUNIONICA AUTOPLINA PLANIRANA, BENZISKA POSTAJA
+BICIKLISTIČKA STAZA/ŠETNICA
+Ž-6260
+I3
+ŽELJEZNIČKI PROMET
+I2 K3
+ČAPORICE
+BRZA TRANSEUROPSKA ŽELJEZNIÈKA PRUGA
+Ž-6154
+GO
+PRIVEZIŠTE
+RIJEČNI PROMET
+Ex
+P
+STRIZIREP
+Ž-6154
+L-67091
+T3
+D-220
+GRAD TRILJ
+RD
+I3
+BISKO
+I3
+I1
+D
+K5
+ISPRAVAK
+D-60
+I1
+I2
+K1 K2
+D
+Ž-6147
+IZMJENE I DOPUNE
+PROSTORNOG PLANA UREĐENJA
+GRADA TRILJA
+Ž-6153
+L-67232
+L-67091
+S
+VININE
+1. KORIŠTENJE I NAMJENA POVRŠINA
+I2 K3
+UGLJANE
+Županija:
+TRILJ
+SPLITSKO-DALMATINSKA
+R3
+Grad:
+BUDIMIRI
+Ž-6260
+D-60
+PLANA UREĐENJA GRADA TRILJA
+IZMJENE I DOPUNE PROSTORNOG
+L-67226
+Naziv prostornog  plana:
+Naziv kartografskog prikaza:
+KORIŠTENJE I NAMJENA POVRŠINA
+Broj kartografskog prikaza
+1 : 25000
+Mjerilo kartografskog prikaza
+1.
+A-1
+L-67085
+Odluka o izradi plana:
+Odluka o donošenju plana
+Službeni glasnik Grada Trilja 08/18.
+""Službeni glasnik Grada Trilja"" 04/20, 01/21 i 08/21
+L-67092
+Objava javne rasprave (datum):
+do:21.05.2020.
+od:06.08.2020. do:14.08.2020.
+od:04.12.2020. do:11.12.2020.
+Javni uvid održan:
+Ponovljeni javni uvid:
+2.ponovljeni javni uvid:
+od:07.05.2020.
+28.04.2020.
+30.07.2020.
+26.11.2020.
+Pečat tijela odgovornog za provođenje javne rasprave:
+Odgovorna osoba za provođenje javne rasprave:
+...................................................................
+M.P.
+Suglasnost na plan
+Mišljenje na osnovu čl. 107.  Zakona o prostornom uređenju (NN153/13 i 65/17, 114/18, 39/19 i 98/19).
+Javna ustanova Zavod za prostorno uređenje Splitsko-dalnatinske županije.
+Klasa: 350-01/20-01/11     Ur. broj: 2181-210-03-20-02         od 21. prosinca 2020.
+Pravna osoba koja je izradila plan:
+ARHEO d.o.o., Zagreb
+Tomislavova 11
+Pečat pravne osobe koja je izradila plan:
+Ž-6151
+Ž-6150
+...................................................................
+M.P.
+Direktor : Mario Pezelj, dipl.ing.arh.,ovlašt.arh.urb.
+Stručni tim u izradi plana:
+Josip Horvat, dipl.ing.prometa - ovlašteni inženjer
+Aron Varga, dipl.ing.arh., ovlašteni arh.
+Damir Batarelo, dipl.ing.iur.
+Andro Žužul, mag.ing.arch.
+Mario Pezelj,dipl.ing.arh.,ovlašt.arh. urbanist
+NOVA SELA
+Janja Novaković,dipl.ing.arh.,ovlašt.arh. urbanist
+Vera Varga, dipl.biolog
+Antonio Baković,dipl.ing.građ.,ovl.građ.
+Vedran Vuletić, mag.ing.arch.
+Vesna Pezelj, dipl.sociolog
+Ivan Sović, ing.el.
+Mario Pezelj, dipl.ing.arh.,ovlašt.arh.urb.
+Odgovorni voditelj izrade plana:
+Pečat Gradskog vijeća:
+Predsjednica Gradskog vijeća:
+S
+...................................................................
+M.P.
+Žana Majić, prof.
+Pečat nadležnog tijela:
+Istovjetnost prostornog plana s izvornikom ovjerava:
+M.P.
+.
+...................................................................",OSTALO

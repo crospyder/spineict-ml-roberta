@@ -1,0 +1,924 @@
+text,label
+"Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+25
+26
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+27
+28
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+29
+30
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+31
+32
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+33
+34
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+35
+36
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+37
+38
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+39
+40
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+41
+42
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+43
+44
+Gašparović, I. i dr.: Analiza prostornih podataka o solarnom potencijalu…, Geod. list 2019, 1, 25–44
+Analysis of Solar Potential Spatial Data
+for Croatia
+multikriterijske GIS analize. Usporednim prikazom vrijednosti GHI-a određenog
+temeljem MSG satelita i modeliranog primjenom modula r.sun uočava se korelaci-
+ja dobivenih rezultata, ali i nemogućnost korištenja podataka dobivenih s MSG
+satelita za energetsko planiranje. Temeljem vrijednosti GHI-a prikazanih na slici
+11, Hrvatska je pogodna za iskorištavanje solarne energije s obzirom na to da
+gotovo cijeli njezin teritorij ima vrijednost GHI-a u kolovozu 2013. godine veći od
+6 kWh/m2. Također, jasno se vidi kako južni i priobalni dio zapadne Hrvatske ima
+veći GHI od ostatka zemlje. Korištenjem modeliranih podataka GHI-a prostorne
+rezolucije 30 m x 30 m osigurava se točnije određivanje klimatski pogodnih pod-
+ručja za iskorištavanje solarne energije.
+Prikupljanje podataka solarnog zračenja na Zemlji odvija se na globalnim, regio-
+nalnim i nacionalnim meteorološkim postajama (Schmithüsen i dr. 2012,
+König-Langlo i dr. 2013, Escobar i dr. 2015, García i dr. 2017, Gašparović i dr.
+2018, Wang i dr. 2019), ali solarno se zračenje može mjeriti i različitim satelitskim
+misijama koje prikupljaju meteorološke podatke (Martins i dr. 2007, Müller i dr.
+2015). Također, solarno zračenje može se modelirati primjenom fizikalnih, ali i
+empirijskih modela zračenja temeljenih na satelitskim mjerenjima, o čemu se više
+može pronaći u istraživanjima Paulescu i dr. (2012), Perez i dr. (2013) te Gašparo-
+vić i dr. (2018).
+Državni hidrometeorološki zavod provodi mjerenja na 43 glavne postaje diljem
+Hrvatske, ali i na klimatskim, fenološkim, kišomjernim i ostalim postajama (slika
+6). Osim meteoroloških podataka, prikupljaju se i podaci o solarnom zračenju.
+Operativna, stalna mjerenja obavljaju se samo za globalno i difuzno zračenje, dok
+se mjerenja direktnoga solarnog zračenja obavljaju samo povremeno i služe za
+kontrolu rada senzora globalnog i difuznog zračenja. Na glavnim meteorološkim
+postajama mjerni sustavi procesiraju mjerenja globalnog i difuznog zračenja u
+intervalima od 1 minute (DHMZ 2008).
+Fizikalni modeli primijenjeni su za određivanje solarnih baza podataka NASA SSE
+(engl. Surface Meteorology and Solar Energy) koji nudi globalne solarne podatke
+i Heliosat za Europu i Afriku (Miller i dr. 2013).
+r.sun, istraživanje uključuje i podatke GHI-a dobivene sa satelita MSG-a, odnosno
+podatke površinskoga dolaznoga kratkovalnog zračenja. Kako bi se mogli uspore-
+diti, oba podatka transformirana su u isti sustav i kartografsku projekciju HTRS96/
+TM i svedena na istovjetnu prostornu rezoluciju od 30 m x 30 m. Za to je primi-
+jenjen modul r.resamp.interp i metoda bilinearne interpolacije (Gašparović 2018).
+Također, za usporedbu su upotrijebljeni podaci komercijalnog poslužitelja SoDa te
+podaci kratkovalnoga globalnog zračenja mjereni na BSRN postaji Carpentras
+(Morel 2013a, 2013b, 2013c, 2013d, 2013e, 2013f, 2013g, 2013h, 2013i, Morel
+2014a, 2014b, 2014c) s obzirom na to da je riječ o podacima solarnog zračenja vi-
+soke točnosti. U nastavku je prikazana dnevna varijacija GHI-a iz različitih izvora
+(SoDa, BSRN, MSG i r.sun) za 2013. godinu (slika 9) i varijacija GHI-a za kolovoz
+2013. godine (slika 10). Navedena analiza provedena je na mjernoj postaji BSRN-a
+najbližoj Hrvatskoj, Carpentras (CAR) u Francuskoj.
+istaknuti kako MSG najviše korelira s podacima BSRN-a, zatim r.sun te naposljet-
+ku SoDa. Analiza točnosti navedenih izvora GHI-a detaljnije je opisana i obrazlo-
+žena u radu Gašparović i dr. (2018).
+Sancho, J. M., Sánchez de Cos, M. C., Jiménez, C. (2011): Comparison of global irradi-
+ance measurements of the official Spanish radiometric network for 2006 with
+satellite estimated data, Tethys, 8, 43–52.
+Schmithüsen, H., Sieger, R., König-Langlo, G. (2012): BSRN Toolbox V2.0 – a tool to
+create quality checked output files from BSRN datasets and station-to-archive
+files, Alfred Wegener Institute, Helmholtz Center for Polar and Marine Research,
+PANGAEA, Bremerhaven, Germany.
+Smets, A., Jäger, K., Isabella, O., Zeman, M., van Swaaij, R. (2016): Solar Energy: The
+physics and engineering of photovoltaic conversion, technologies and systems,
+UIT Cambridge Limited, Cambridge, UK.
+SPE (2018): Global Market Outlook for Solar Power / 2018 – 2022, Solar Power Eu-
+rope, Brussels, Belgium.
+Šúri, M., Hofierka, J. (2004): A new GIS-based solar radiation model and its applica-
+tion to photovoltaic assessments, Transaction in GIS, 8, 2, 175–190.
+Tahir, Z. R., Asim, M. (2018): Surface measured solar radiation data and solar energy
+resource assessment of Pakistan: A review, Renewable and Sustainable Energy
+Reviews, 81, 2839–2861.
+Vernay, C., Pitaval, S., Blanc, P. (2014): Review of satellite-based surface solar irradia-
+tion databases for the engineering, the financing and the operating of photovolta-
+ic systems, Energy Procedia, 57, 1383–1391.
+Vignola, F. E., McMahan, A. C., Grover, C. N. (2013): Bankable Solar-Radiation Data-
+sets, In Solar Energy Forecasting and Resource Assessment, Kleissl, J. (ed.), El-
+sevier, 97–132.
+Wang, P., van Westrhenen, R., Meirink, J. F., van der Veen, S., Knap, W. (2019): Surface
+solar radiation forecasts by advecting cloud physical properties derived from Me-
+teosat Second Generation observations, Solar Energy, 177, 47–58.
+WMO (1981): Meteorological Aspects of Utilization of Solar Radiation as an Energy
+Source, World Meteorological Organisation, Technical Note, 172, Geneva, Switzer-
+land.
+Monitoring Centre at the Alfred Wegener Institute, GCOS – 174, WCRP Report
+24/2013, Bremerhaven, Germany.
+UDK 551.521.1:621.311.243:681.782.42:711.12(497.5)
+Izvorni znanstveni članak / Original scientific paper
+1. Uvod
+3. Prikupljanje podataka o solarnom zračenju
+3.1.3. Satelitska mjerenja solarnog zračenja na Zemlji
+2.2.2. Difuzno horizontalno zračenje
+3.1.2. Referentna mreža površinskog zračenja
+Literatura
+Naziv
+Pokrivenost
+Prostorna
+rezolucija
+Vremenska
+rezolucija
+Vrsta
+podataka
+Dostupnost
+1 05
+1
+,
+
+
+
+
+
+
+CAL
+,
+za
+0,2
+za
+2
+0 8
+05
+<
+≤
+<
+≤
+H
+E
+n
+s
+0
+0
+86400
+1
+0 033
+360
+365
+180
+=
++
+
+
+
+
+( )
+π
+π ω
+δ
+ϕ
+,
+cos
+sin
+sin( )+
+( )
+( )
+
+
+
+
+
+≤−
+−
+
+
+cos
+cos
+sin(
+)
+δ
+ϕ
+ωs
+,
+(1)
+
+
+
+k
+CAL
+0
+0,8
+za
+1
+za
+>1,05
+CAL
+CAL
+CAL
+3.1. Mjerenje solarnog zračenja
+Amillo, A. G., Huld, T., Müller, R. (2014): A new database of global and direct solar
+radiation using the eastern meteosat satellite, models and validation, Remote
+Sensing, 6, 9, 8165–8189.
+Broesamle, H., Mannstein, H., Schillings, C., Trieb, F. (2001): Assessment of solar
+electricity potentials in North Africa based on satellite data and a geographic in-
+formation system, Solar Energy, 70, 1, 1–12.
+Camargo, L. R., Zink, R., Dorner, W., Stoeglehner, G. (2015): Spatio-temporal modeling
+of roof-top photovoltaic panels for improved technical potential assessment and
+electricity peak load offsetting at the municipal scale, Computers, Environment
+and Urban Systems, 52, 58–69.
+DHMZ (2008): Naputak za opažanja i mjerenja na glavnim meteorološkim postajama,
+Državni hidrometeorološki zavod, Zagreb.
+Duffie, J. A., Beckman, W. A. (2013): Solar engineering of thermal processes, John
+Wiley & Sons, Hoboken, New Jersey, USA.
+Escobar, R. A., Cortés, C., Pino, A., Salgado, M., Pereira, E. B., Martins, F. R., Boland,
+J., Cardemil, J. M. (2015): Estimating the potential for solar energy utilization in
+Chile by satellite-derived data and ground station measurements, Solar Energy,
+121, 139–151.
+EUMETSAT (2015): METEOSAT: Europe’s geostationary meteorological satellites,
+Darmstadt, Germany.
+García, R. D., Cuevas, E., García, O. E., Ramón, R., Romero-Campos, P. M., de Ory, F.,
+Cachorro, V. E., de Frutos, A. (2017): Compatibility of different measurement
+techniques of global solar radiation and application for long-term observations at
+Izaña Observatory, Atmos. Meas. Tech., 10, 731–743.
+Gašparović, I. (2018): Geoprostorne analize potencijala solarne energije u Republici
+Hrvatskoj primjenom multikriterijskoga odlučivanja, doktorski rad, Geodetski
+fakultet Sveučilišta u Zagrebu, Zagreb.
+Gašparović, I., Gašparović, M., Medak, D. (2018): Determining and analysing solar ir-
+radiation based on freely available data: A case study from Croatia, Environmen-
+tal Development, 26, 2, 55–67.
+Hofierka, J., Šúri, M. (2002): The solar radiation model for Open source GIS: imple-
+mentation and applications, Proceedings of the Open source GIS-GRASS users
+conference, Trento, 51–70.
+Hofierka, J., Kaňuk, J., Gallay, M. (2014): The spatial distribution of photovoltaic pow-
+er plants in relation to solar resource potential: the case of the Czech Republic
+and Slovakia, Moravian Geographical Reports, 22, 2, 26–33.
+Holmgren, W. F., Andrews, R. W., Lorenzo, A. T., Stein, J. S. (2015): PVLIB python
+2015, In Photovoltaic Specialist Conference (PVSC), 2015 IEEE 42nd, New
+Orleans, 1–5.
+Huld, T. (2017): PVMAPS: Software tools and data for the estimation of solar radiation
+and photovoltaic module performance over large geographical areas, Solar Energy,
+142, 171–181.
+Kostoulas, A. G. K., Vokas, G. A., Skittides, F. (2004): Review of Solar Radiation esti-
+mation and Solar Data Banks elaboration methodologies over Greece, WSEAS
+Transactions on Circuits and Systems, 5, 3, 1221–1227.
+König-Langlo, G., Sieger, R., Schmithüsen, H., Bücker, A., Richter, F., Dutton, E. G.
+(2013): The Baseline Surface Radiation Network and its World Radiation
+CS =
+−
+Liang, J., Gong, J., Zhou, J., Ibrahim, A. N., Li, M. (2015): An open-source 3D solar
+radiation model integrated with a 3D Geographic Information System, Environ-
+mental Modelling and Software, 64, C, 94–101.
+Podatke solarnog zračenja mjerene na Zemlji moguće je preuzeti s postaja Refe-
+rentne mreže površinskog zračenja (BSRN). Mreža referentnih postaja za površin-
+sko zračenje dizajnirana je 2004. godine u programu Globalnog sustava promatra-
+nja klimatskih promjena (engl. Global Climate Observing System – GCOS). BSRN
+trenutačno ima 63 postaje u različitim klimatskim zonama na svijetu, pokrivajući
+raspon geografske širine od 80° N do 90° S (slika 7). Solarno i atmosfersko zrače-
+nje mjere se instrumentima najviše dostupne točnosti i s visokom vremenskom
+rezolucijom od 1 do 3 minute. Glavni je cilj BSRN-a osigurati opažanje najbolje
+moguće kvalitete za kratkovalno i dugovalno zračenje s visokom vremenskom re-
+zolucijom. BSRN upotrebljava se (König-Langlo i dr. 2013):
+•	za praćenje kratkovalnog i dugovalnog zračenja i njihovih komponenti najkvali-
+tetnijim instrumentima
+•	za pružanje podataka za validaciju i evaluaciju satelitskih procjena površinskih
+zračenja
+•	za izradu visokokvalitetnih podataka motrenja za usporedbu s klimatskim mo-
+delima i za razvoj lokalnih klimatologija zračenja.
+Posljednjih se godina zbog povećane potrošnje fosilnih goriva, odnosno visoke emi-
+sije CO2 u atmosferu i zagađivanja okoliša koje nepovratno uništava prirodu, svijet
+sve više okreće obnovljivim, ekološki prihvatljivim izvorima energije. Svrha je
+iskorištavanja obnovljivih izvora energije prije svega zaštita okoliša, ali pritom
+dolazi i do povećanja lokalnog i regionalnog razvoja kao i povećanja zaposlenja
+stanovništva. Osim smanjenja zagađivanja okoliša, smanjenja emisije stakleničkih
+plinova uzrokovanih upotrebom fosilnih goriva poboljšava se kvaliteta života i
+povećava sigurnost stanovništva.
+meteonorm
+globalna
+3 km
+30 km
+mjesečna
+GHI, DHI,
+GTI, DNI
+komercijalan
+Osim mjerenja solarnog zračenja na meteorološkim postajama na Zemlji, podatke
+o solarnom zračenju moguće je prikupiti opažanjem Zemlje sa satelita. Meteoro-
+loški sateliti mogu imati polarne ili ekvatorijalne orbite (geostacionarni sateliti).
+Sateliti polarnih orbita nalaze se na visini od 850 km iznad Zemljine površine i
+stoga postižu veću rezoluciju i točnost od geostacionarnih satelita koji se nalaze
+na 36 000 km iznad Zemlje, ali zbog stalnog motrenja istog dijela Zemlje te mje-
+renja u većoj vremenskoj rezoluciji preferiraju se geostacionarni sateliti za potrebe
+praćenja solarnog zračenja. Meteorološki sateliti opremljeni su s nekoliko senzora
+za mjerenje zračenja. Aktualna generacija meteoroloških satelita (slika 8a) iz kojih
+je moguće dobiti podatke o solarnom zračenju su GOES 8–15 (engl. Geostationary
+Operational Environmental Satellite) za područje SAD-a, MSG (slika 8b) (engl.
+Meteosat Second Generation) koji pokrivaju Europu i Afriku te MTSAT (engl.
+Multi-Functional Transport Satellite) za područje Australije i Pacifika (Perez i dr.
+2013).
+Difuzno horizontalno zračenje (engl. Diffuse Horizontal Irradiation – DHI) ozna-
+čava solarno zračenje primljeno od Sunca nakon što je njegov smjer promije-
+njen zbog atmosferskog raspršenja (slika 4). Raspršivanje zračenja uzrokuju mo-
+lekule plinova i čestice koje se nalaze u atmosferi, a koje solarno zračenje
+pobuđuje na titranje. Pritom se primljena energija ne širi u jednom smjeru kao pri
+ulasku u atmosferu, već u svim smjerovima. Zbog toga je utjecaj raspršenja dvojak,
+smanjuje jačinu solarnog zračenja, ali i uzrokuje raspršeno zračenje s neba (Matić
+2007).
+,
+,
+(5)
+
+CAL
+CAL
+1 1661
+1 781
+0 73
+0 09
+,
+,
+,
+,
+2
+−
+⋅
++
+⋅
+
+
+Radi jasnijeg razumijevanja važnosti prostorne rezolucije GHI-a za potrebe ener-
+getskog planiranja izrađen je prikaz GHI-a na području Hrvatske mjeren temeljem
+MSG satelita prostorne rezolucije 5,6 km x 5,6 km (slika 11a i slika 11c) i mode-
+liran u programu GRASS GIS prostorne rezolucije 30 m x 30 m (slika 11b i slika
+11d). U ovom slučaju, GHI je izračunat kao mjesečni prosjek za kolovoz 2013.
+godine. Mjesečni ili godišnji prosjeci GHI-a danas se često upotrebljavaju za
+gdje su:
+Empirijski modeli iz vidljivih kanala satelitskih snimaka određuju koeficijent
+oblačnosti, koji se upotrebljava za modeliranje GHI-a za vedro nebo. Poluempirij-
+ski modeli za određivanje solarnog zračenja upotrebljavaju jednostavne metode
+prijenosa zračenja i mjerene podatke, a primijenjeni su za određivanje solarnih
+baza podataka SolarAnywhere i SolarGIS (Perez i dr. 2013).
+Mjerenje solarnog zračenja na Zemlji odvija se na meteorološkim postajama, ali
+solarno se zračenje može mjeriti i različitim satelitskim misijama koje prikupljaju
+meteorološke podatke. Mjerenje solarnog zračenja obuhvaća prikupljanje podataka
+o direktnom ili difuznom kratkovalnom solarnom zračenju te dugovalnom zrače-
+nju (Matić 2007).
+NASA SSE
+Release 6.0
+globalna
+111 km
+3 h
+GHI, DHI,
+DNI
+besplatan
+
+E0 	– solarna konstanta 1367 W/m2
+Martins, F. R., Pereira, E. B., Abreu, S. L. (2007): Satellite-derived solar resource maps
+for Brazil under SWERA project, Solar Energy, 81, 4, 517–528.
+ABSTRACT. The Republic of Croatia due to its accommodation and mild, Mediter-
+ranean climate and a large number of sunny hours is suitable for exploiting solar
+energy. The newly installed capacities of photovoltaic systems and solar power plants
+each year are becoming more important in the overall energy consumption due to
+environmental protection. For the purpose of energy planning and geospatial analy-
+sis, the most commonly used solar irradiation measure is global horizontal irradia-
+tion (GHI). The main purpose of this study was to explore all available solar energy
+data sources for Croatia, given that solar potential data is a basic parameter for solar
+power plant planning. In the research data from known global solar radiation data-
+bases were compared. In addition to the available data for Croatia, GHI has been
+modelled using the module r.sun program in the GRASS GIS program. Its. Compar-
+ison and analysis of the r.sun data were also performed with respect to solar radiation
+data obtained from satellite measurements and measured at Baseline Surface Radi-
+ation Network (BSRN) stations. Exploring the solar potential data sources for Croa-
+tia, it was concluded that none of the available, non-commercial sources of solar po-
+tential data does meet the criterion of large spatial resolution, so solar energy
+modelling is recommended. A comparison of the GHI values ​from different sources
+has shown that solar energy data measured on MSG (Meteosat Second Generation)
+satellites correlate best with measurements at BSRN stations. Analysing modelled
+solar potential data has shown that the data obtained by the r.sun module are more
+accurate than the data of the commercial provider SoDa (Solar Radiation Data) also
+have suitable resolution and can be used to determine the optimal locations for ex-
+ploiting solar energy.
+OSI SAF
+Europa, Afrika,
+Amerika
+5,6 km
+30 min
+GHI
+besplatan
+n 	 – redni broj dana u godini
+Temeljem sljedećeg izraza određen je i stvarni GHI odnosno GHI na Zemlji (Gašpa-
+rović 2018):
+Matić, Z. (2007): Sunčevo zračenje na području Republike Hrvatske: Priručnik za en-
+ergetsko korištenje Sunčevog zračenja, Energetski institut Hrvoje Požar, Zagreb.
+s 	– Sunčevo vrijeme izlaska Sunca izraženo u kutnoj vrijednosti (°)
+	 – deklinacija Sunca
+	 – geografska širina Sunca.
+Analiza prostornih podataka o solarnom
+potencijalu za Hrvatsku
+PVGIS CM-SAF
+Europa, Afrika
+2,8 km
+30 min
+GHI, DHI,
+GTI, DNI
+besplatan
+Mjerenje globalnog solarnog zračenja na horizontalnu plohu sastoji se od direk-
+tnog Sunčeva zračenja i difuznog zračenja s neba. Instrument kojim se mjeri
+globalno horizontalno zračenje naziva se piranometar (slika 5a). Pri postavljanju
+piranometra važno je da instrument nema prepreke koje su visine veće od 5° u
+području gdje Sunce izlazi i zalazi te da ne registrira zračenje odbijeno od tla i
+okolnih objekata (Matić 2007). Piranometrom se provodi i mjerenje difuznoga
+solarnog zračenja, ali treba zasjeniti Sunčev disk tako da do instrumenta ne dola-
+zi direktno solarno zračenje (slika 5b) (Duffie i Beckman 2013). Odbijeno solarno
+zračenje mjeri se na visini od 1 m do 2 m iznad Zemljine površine, također pira-
+nometrima, ali s posebno dizajniranom maskom koja sprečava da kupolu uređaja
+obasjava Sunce na izlasku i zalasku (Matić 2007). Direktno solarno zračenje mjeri
+se pirheliometrom, koji konstantno mora pratiti prividno kretanje Sunca što se
+najčešće postiže dvoosnim mehanizmima praćenja (slika slika 5c). Vidni kut pir-
+heliometra je samo 5°, kako bi uređaj mjerio samo zračenje koje dolazi iz uskog
+pojasa oko Sunčeva diska, ali ne i difuzno zračenje s neba (Paulescu i dr. 2012).
+Modul r.sun implementiran u program GRASS GIS primjer je fizikalnog mode-
+la.  Razvili su ga autori Hofierka i Šúri (2002) za potrebe modeliranja solar-
+nog ­zračenja. Primjenom modula r.sun moguće je modelirati GHI, odnosno njego-
+ve maksimalne vrijednosti, GHICS, koje ne uzimaju u obzir utjecaj atmosfere
+(Hofierka i Šúri 2002). Za izračun GHI-a treba imati digitalni model visina, a za
+ovo je istraživanje upotrijebljen ASTER (engl. Advanced Spaceborne Thermal
+Emission and Reflection Radiometer) GDEM (engl. Global Digital Elevation Mo-
+del). Ostali ulazni podaci uključuju faktor Linke Turbidity (faktor LT), koji je
+izračunat korištenjem programa razvijenog u programskom jeziku Python (Gašpa-
+rović 2018), temeljenog na PVLIB (Holmgren i dr. 2015). S obzirom na to da se
+faktor LT ne mijenja znatno s promjenom lokacije, bilo je dovoljno izračunati
+njegove vrijednosti na svakih 10 km x 10 km. Kako bi se uklonio utjecaj visina na
+faktor LT, njegove su vrijednosti normalizirane na srednju razinu mora (WMO
+1981):
+Miller, S. D., Heidinger, A. K., Sengupta, M. (2013): Physically Based Satellite Methods,
+In Solar Energy Forecasting and Resource Assessment, Kleissl, J. (ed.), Elsevier,
+49–80.
+Satel-Light
+Europa, sjeverna
+Afrika
+3 km
+30 min
+GHI, DHI,
+GTI
+besplatan
+Jedan od ciljeva ovoga rada bio je prije svega pronaći, analizirati te dati pregled
+podataka solarnog zračenja za Hrvatsku. Pritom su uspoređeni podaci poznatih
+svjetskih baza podataka solarnog zračenja, ali uz već dostupne podatke za Hrvat-
+sku, modeliran je GHI primjenom programa GRASS GIS, tj. njegova modula r.sun,
+koji su razvili Hofierka i Šúri (2002), a poslije ga primjenjivali i mnogi drugi au-
+tori, npr. Hofierka i dr. (2014), Camargo i dr. (2015), Liang i dr. (2015), Huld
+(2017) i Gašparović (2018). Također je provedena i usporedba te analiza r.sun
+podataka u odnosu na podatke solarnog zračenja prikupljene satelitskim mjerenji-
+ma te mjerene na zemaljskim postajama Referentne mreže površinskog zračenja
+(engl. Baseline Surface Radiation Network – BSRN).
+GHI
+k
+GHI
+CS
+CS
+=
+⋅
+.
+(6)
+Svake godine sve je više novoinstaliranih kapaciteta fotonaponskih sustava i kon-
+centriranih solarnih elektrana, stoga solarna energija danas ima značajnu ulogu u
+ukupnoj elektroenergetskoj potrošnji. Do kraja 2017. godine u svijetu je instalira-
+no fotonaponskih sustava kapaciteta približno 400 GW. U 2017. godini instalirano
+je gotovo 1 GW fotonaponskih kapaciteta, što je približno jednako ukupnom kapa-
+citetu instaliranom do 2012. godine (SPE 2018, slika 1).
+SolarAnywhere
+Sjeverna
+Amerika, Havaji,
+Karibi
+10 km
+1 h
+GHI, DHI,
+DNI
+komercijalan
+5. Zaključak
+2.2.3. Odbijeno horizontalno zračenje
+2.2. Utjecaj atmosfere na solarno zračenje
+Morel, J. P. (2013a): Basic measurements of radiation at station Carpentras (2013-01),
+Centre Radiometrique, PANGAEA, Carpentras, France.
+Iva GAŠPAROVIĆ1, Mateo GAŠPAROVIĆ2, Damir MEDAK3,
+Mladen ZRINJSKI4
+Iz prethodnih analiza varijacija GHI-a i istraživanja drugih autora (Vignola i dr.
+2013, Gašparović i dr. 2018, Tahir i Asim 2018) jasno je vidljiva velika korelacija
+svih izvornika za GHI. S obzirom na to da su BSRN podaci realni i točni, odnosno
+mjereni na Zemljinoj površini, uzimamo ih kao referentne. U tom slučaju treba
+3.3. Baze podataka solarnog zračenja
+Glavni cilj ovog istraživanja bio je istražiti sve dostupne izvore podataka o solar-
+nom potencijalu za Republiku Hrvatsku, s obzirom na to da su podaci o solarnom
+potencijalu osnovni parametar za energetsko planiranje solarnih elektrana.
+SolarGIS
+globalna
+3 km
+15 min
+30 min
+GHI, DHI,
+GTI, DNI
+komercijalan
+Nakon prolaska kroz atmosferu solarno zračenje dolazi na Zemljinu površinu, koja
+ovisno o svojstvima podloge reflektira (odbija) zračenje. Svojstvo podloge da reflek-
+tira zračenje izražava se koeficijentom refleksije ili albedom (Smets i dr. 2016).
+Crno tijelo ima albedo jednak 0, dok bijelo tijelo reflektira zračenje i njegov je al-
+bedo 1.
+Na putu kroz Zemljinu atmosferu solarno zračenje slabi jer se raspršuje na mole-
+kulama plinova, vode i česticama prašine te apsorbira prilikom međudjelovanja s
+molekulama plinova (Duffie i Beckman 2013). Atmosferski utjecaj (A) može se
+definirati izrazom (Broesamle i dr. 2001):
+Morel, J. P. (2013b): Basic measurements of radiation at station Carpentras (2013-02),
+Centre Radiometrique, PANGAEA, Carpentras, France.
+U mnogim istraživanjima (Kostoulas i dr. 2004, Vernay i dr. 2014, Amillo i dr. 2014
+te Tahir i Asim 2018) autori razvijaju i predlažu upotrebu podataka o solarnom
+zračenju iz baza podataka solarnog zračenja (tablica 1). Prilikom upotrebe tih
+baza podataka potrebno je razumjeti različite karakteristike podataka, kao što su:
+područje primjene podataka, vremenska rezolucija, prostorna rezolucija, vremen-
+sko razdoblje prikupljanja podataka, točnost podataka te prisutnost sustavnih ili
+drugih pogrešaka (Vignola i dr. 2013). Točnost svake od baza podataka varira
+ovisno o lokaciji istraživanja i vremenskom razdoblju (Vernay i dr. 2014).
+Europa, Afrika,
+dio Južne
+Amerike, Indijski
+ocean, Azija
+Slika 2.	Udio instaliranoga solarnog kapaciteta 10 najvećih svjetskih proizvođača solar-
+ne energije (SPE 2018).
+besplatan za
+znanstvena
+istraživanja
+Morel, J. P. (2013c): Basic measurements of radiation at station Carpentras (2013-03),
+Centre Radiometrique, PANGAEA, Carpentras, France.
+2,5 km
+30 min
+GHI, DHI,
+DNI
+Istraživanjem izvora podataka o solarnom potencijalu za Republiku Hrvatsku uo-
+čeno je da ni jedan od dostupnih, nekomercijalnih izvora podataka o solarnom
+potencijalu ne zadovoljava kriterij velike prostorne rezolucije, stoga se preporuča
+modeliranje solarnog potencijala. U istraživanju se upotrebljavao algoritam za
+računanje solarnog potencijala u Republici Hrvatskoj u velikoj rezoluciji, koji se
+temelji na modulu r.sun programa otvorenoga koda GRASS GIS. Pritom se izra-
+čunati solarni potencijal maksimalne vrijednosti umanjuje za utjecaj atmosfere
+temeljem stvarnih podataka prikupljenih s meteoroloških satelita.
+Solemi
+SAŽETAK. Zbog svojeg smještaja, blage mediteranske klime i velikog broja sunčanih
+sati Hrvatska je pogodna za iskorištavanje solarne energije. Novoinstalirani kapac-
+iteti fotonaponskih sustava i koncentriranih solarnih elektrana zbog zaštite okoliša
+imaju sve značajniju ulogu u ukupnoj elektroenergetskoj potrošnji. Za potrebe ener-
+getskog planiranja te geoprostornih analiza danas je najčešće upotrebljavana mjera
+solarnog zračenja globalno zračenje na horizontalnoj površini (engl. Global Horizon-
+tal Irradiation – GHI). Glavni cilj ovog istraživanja bio je istražiti sve dostupne iz-
+vore podataka o solarnom potencijalu za Hrvatsku, s obzirom na to da su podaci o
+solarnom potencijalu osnovni parametar za energetsko planiranje solarnih elektrana.
+Pritom su uspoređeni podaci poznatih svjetskih baza podataka solarnog zračenja te
+je uz već dostupne podatke za Hrvatsku, GHI modeliran primjenom programa
+GRASS GIS, tj. njegova modula r.sun. Također je provedena usporedba i analiza
+r.sun podataka u odnosu na podatke solarnog zračenja prikupljene satelitskim mjer-
+enjima te mjerene na zemaljskim postajama Referentne mreže površinskog zračenja
+(engl. Baseline Surface Radiation Network – BSRN). Istraživanjem izvora podataka
+o solarnom potencijalu za Hrvatsku uočeno je da ni jedan od dostupnih, nekomerci-
+jalnih izvora podataka o solarnom potencijalu ne zadovoljava kriterij velike prostorne
+rezolucije, stoga se preporuča modeliranje solarnog potencijala. Provedena usporedba
+vrijednosti GHI-a s različitih izvornika pokazala je kako podaci solarnog potencijala
+mjereni na MSG (engl. Meteosat Second Generation) satelitu najbolje koreliraju s
+mjerenjima na postajama BSRN-a. Analizom modeliranih podataka solarnog po-
+tencijala utvrđeno je kako su podaci dobiveni modulom r.sun točniji od podataka
+SoDa (engl. Solar Radiation Data), pogodne su rezolucije te se mogu upotrebljavati
+u svrhu određivanja optimalnih lokacija za iskorištavanje solarne energije.
+Morel, J. P. (2013d): Basic measurements of radiation at station Carpentras (2013-04),
+Centre Radiometrique, PANGAEA, Carpentras, France.
+Podaci o solarnom zračenju mjereni na postajama BSRN-a dostupni su registrira-
+nim korisnicima u specifičnom formatu tzv. stanica za arhivu (engl. station-to-ar-
+chive), koji nije moguće čitati bez uputa danih u priručniku formata BSRN-a. Zbog
+toga je razvijena aplikacija BSRN-Toolbox (Schmithüsen i dr. 2012), koju je mogu-
+će preuzeti na mrežnim stranicama BSRN-a, a služi za jednostavno konvertiranje
+podataka u čitljive tablične formate.
+A
+R
+Ozon
+Plin
+VP
+Ae
+O
+=
+⋅
+⋅
+⋅
+⋅
+⋅
+τ
+τ
+τ
+τ
+τ
+τ ,
+(2)
+Morel, J. P. (2013e): Basic measurements of radiation at station Carpentras (2013-05),
+Centre Radiometrique, PANGAEA, Carpentras, France.
+2.2.4. Globalno horizontalno zračenje
+4. Usporedba podataka solarnog potencijala za potrebe geoprostornih analiza
+gdje su:
+2. Solarno zračenje
+Morel, J. P. (2013f): Basic measurements of radiation at station Carpentras (2013-06),
+Centre Radiometrique, PANGAEA, Carpentras, France.
+R 	 – Rayleighovo raspršenje
+Najčešće korištena mjera solarnog zračenja je globalno zračenje na horizon­
+talnoj površini. U istraživanjima solarnog potencijala Hofierka i dr. (2014), Camar-
+go i dr. (2015), Liang i dr. (2015) te Huld (2017) su za potrebe energetskog
+­pla­niranja upotrebljavali GHI kao mjeru solarnog zračenja. Globalno horizontal-
+no  zračenje (GHI) suma je direktnog i difuznog zračenja na Zemljinoj površini
+(slika 4):
+LT
+LT
+h
+norm =
++
+⋅
+0 00035
+,
+,
+(4)
+Za potrebe geoprostornih analiza u energetskom planiranju potrebno je imati kva-
+litetne, točne i aktualne podatke solarnog potencijala velike prostorne rezolucije.
+Optimalna prostorna rezolucija za potrebe prostornog planiranja u pronalaženju
+potencijalnih lokacija za solarne elektrane iznosi <100 m (Gašparović 2018). Iako
+su mjerenja solarnog potencijala na meteorološkim postajama (BSRN, DHMZ i dr.)
+najtočnija (Gašparović i dr. 2018), ne mogu se upotrebljavati za potrebe geopro-
+stornih analiza zbog svoje prevelike raspršenosti, tj. male prostorne rezolucije
+(Gašparović 2018). S druge strane komercijalni poslužitelji solarnog potencijala, tj.
+baze podataka solarnog zračenja poput SoDa (engl. Solar Radiation Data), ne nude
+dovoljnu rezoluciju za potrebe prostornog planiranja (3 km, iz rada Gašparović i
+dr. 2018).
+Solarno je zračenje po svojoj prirodi elektromagnetsko zračenje. Elektromagnetski
+valovi nastaju ubrzanjem nabijenih čestica te se u vakuumu šire brzinom svjetlosti
+299 792 458 m/s (Smets i dr. 2016). Elektromagnetski se valovi razlikuju prema
+načinu nastanka pa se nazivaju radiovalovi, mikrovalovi, toplinski valovi, vidljiva
+svjetlost, ultraljubičasto zračenje, rendgensko zračenje i gama zračenje. Solarno
+zračenje koje dopire do nas na Zemlji posljedica je toplinskog zračenja Sunčeve
+površine, odnosno atomskih ili molekularnih prijelaza (Perić 2002).
+Tablica 1. Baze podataka solarnog zračenja (Vernay i dr. 2014).
+Ozon 	– apsorpcija ozona
+Kako bi se istražila korelacija izračunatoga solarnog potencijala napravljena je
+usporedba sa stvarnim mjerenjima na Zemlji, na odabranoj meteorološkoj postaji
+BSRN-a najbližoj Hrvatskoj, Carpentras u Francuskoj te s podacima MSG-a i
+SoDa. Provedena usporedba vrijednosti GHI-a s različitih izvornika pokazala je
+kako podaci MSG-a i BSRN-a najbolje koreliraju s obzirom na to da je riječ o mje-
+renim podacima, dok su r.sun i SoDa modelirani. Međutim, utvrđeno je kako su
+podaci dobiveni modulom r.sun točniji od podataka SoDa, pogodne su rezolucije te
+se mogu upotrebljavati u svrhu određivanja optimalnih lokacija za iskorištavanje
+solarne energije.
+Morel, J. P. (2013g): Basic measurements of radiation at station Carpentras (2013-07),
+Centre Radiometrique, PANGAEA, Carpentras, France.
+Naziv
+Pokrivenost
+Prostorna
+rezolucija
+Vremenska
+rezolucija
+Vrsta
+podataka
+Dostupnost
+Plin 	– apsorpcija u atmosferskim plinovima (O2 i CO2)
+Keywords:	solar potential, spatial data, geospatial analysis, GIS, energy planning,
+GHI.
+gdje je LTnorm vrijednost normaliziranog LT-a na srednju razinu mora, a h je nad-
+morska visina.
+Morel, J. P. (2013h): Basic measurements of radiation at station Carpentras (2013-08),
+Centre Radiometrique, PANGAEA, Carpentras, France.
+VP 	 – apsorpcija u vodenoj pari (H2O)
+3TIER
+globalna
+3,7 km
+30 min
+GHI, DHI,
+DNI
+komercijalan
+Ae 	 – raspršenje na krutim česticama (aerosoli)
+Radi ubrzavanja rada modula r.sun napravljeno je nekoliko optimizacija kao i
+izračun rasterskih matrica aspect i slope, koje su upotrijebljene kao ulazni para-
+metri za izračun globalnoga horizontalnog zračenja za vedro nebo, GHICS (Gašpa-
+rović 2018). Na taj način određen je GHICS rezolucije 30 m za sve dane 2013. go-
+dine.
+Morel, J. P. (2013i): Basic measurements of radiation at station Carpentras (2013-09),
+Centre Radiometrique, PANGAEA, Carpentras, France.
+Primljeno / Received: 2019-01-18
+CM-SAF
+Europa, Afrika
+15 km
+15 min
+GHI
+besplatan
+a)
+b)
+Slika 8.	a) Geostacionarni meteorološki sateliti (Vignola i dr. 2013), b) MSG satelit (EU-
+METSAT 2015).
+O 	 – raspršenje u oblacima.
+Mrežne adrese
+GHI=BHI+DHI .
+(3)
+DLR-ISIS
+globalna
+280 km
+3 h
+GHI, DNI
+besplatan za
+znanstvena
+istraživanja
+Slika 9. Varijacija GHI-a za 2013. godinu na mjernoj postaji CAR.
+Slika 3. Broj solarnih elektrana po županijama u Hrvatskoj za godinu 2018. iz Registra
+OIEKPP-a.
+Morel, J. P. (2014a): Basic measurements of radiation at station Carpentras (2013-10),
+Centre Radiometrique, PANGAEA, Carpentras, France.
+Prihvaćeno / Accepted: 2019-02-27
+Solarno zračenje dijeli se na različite vrste zračenja pa u odnosu na položaj plohe
+može biti horizontalno, nagnuto ili normalizirano solarno zračenje, a u odnosu na
+utjecaj atmosfere dijeli se na izvanatmosfersko i atmosfersko solarno zračenje.
+URL 1: Kipp & Zonen, http://www.kippzonen.com/, (1.9.2018.).
+URL 2: CM121B/C Shadow Ring for pyranometers – Kipp & Zonen,
+http://www.kippzonen.com/Product/42/CM121B-C-Shadow-Ring#.W1ysxdIzaUk,
+(1.9.2018.).
+URL 3: DR02 pyrheliometer – Hukseflux,
+https://www.hukseflux.com/product/dr02-pyrheliometer, (2.9.2018.).
+URL 4: DHMZ,
+http://meteo.hr/infrastruktura.php?section=mreze_postaja&param=pmm,
+(13.9.2018.).
+URL 5: Baseline Surface Radiation Network: Maps,
+https://bsrn.awi.de/en/nc/stations/maps/, (11.9.2018.).
+Perez i dr. (2013) solarno zračenje dijeli na sljedeće komponente:
+besplatan za
+znanstvena
+istraživanja
+Morel, J. P. (2014b): Basic measurements of radiation at station Carpentras (2013-11),
+Centre Radiometrique, PANGAEA, Carpentras, France.
+Slika 1. Globalni razvoj instaliranoga kapaciteta solarne energije (SPE 2018).
+EnMetSol
+Europa, dio
+Afrike
+1 km
+2,5 km
+15 min
+30 min
+GHI, DHI,
+GTI, DNI
+•	direktno horizontalno zračenje
+Prethodno izračunati GHICS ispravljen je za atmosferski utjecaj temeljem koefici-
+jenta vedrine neba, kCS. Navedeni koeficijent može se odrediti na više načina te-
+meljem direktnog ili difuznog zračenja (Šúri i Hofierka 2004), podataka sa ze­
+maljskih mjernih postaja (Camargo i dr. 2015) ili različitim meteorološkim
+satelitskim podacima (Müller i dr. 2015). Većina satelitskih podataka koji se upo-
+trebljavaju za određivanje koeficijenta vedrine neba komercijalna je i nije dostup-
+na u vremenskoj rezoluciji od jednog dana (Gašparović i dr. 2018). Ako se upo­
+trebljavaju podaci sa zemaljskih mjernih postaja, postoji problem nejednake
+rasprostranjenosti postaja u Republici Hrvatskoj, kao i problem nedostupnosti
+sirovih podataka mjerenja. Stoga su za izračun koeficijenta kCS upotrijebljeni po-
+daci MSG-a, odnosno efektivni albedo oblaka CAL koji su dostupni bez naknade i
+prethodno primijenjeni u istraživanjima drugih autora (Sancho i dr. 2011, Müller
+i dr. 2015, Huld 2017). Koeficijent vedrine neba izračunat je primjenom izraza
+(Müller i dr. 2015):
+Temeljem opažanja sa satelita Meteosat izvedena su dva seta podataka: SARAH
+(engl. Surface Solar Radiation Data Set – Heliosat) i operativni set podataka. SA-
+RAH čine klimatološki podaci o površinskom dolaznom kratkovalnom zračenju
+(engl. Surface Incoming Shortwave radiation – SIS), direktnom normalnom zrače-
+nju (engl. Direct Normal Irradiation – DNI) i efektivnom albedu oblaka (engl.
+Effective Cloud Albedo – CAL) (Amillo i dr. 2014, Müller i dr. 2015).
+a)
+b)
+c)
+Slika 5.	a) Piranometar SMP11 tvrtke Kipp & Zonnen (URL 1), b) piranometar s kruž-
+nim sjenilom tvrtke Kipp & Zonnen (URL 2), c) pirheliometar DR02 tvrtke Huk-
+seflux (URL 3).
+Za potrebe projektiranja, odabira optimalnih lokacija te projekcija količine generi-
+rane električne energije iz solarnih elektrana potrebno je odrediti potencijal isko-
+rištavanja solarne energije na interesnom području. Kako bi se odredio potencijal
+iskorištavanja solarne energije, treba prikupiti podatke o solarnom zračenju (Ca-
+margo i dr. 2015, Liang i dr. 2015). Solarno zračenje pritom se dijeli na različite
+vrste zračenja u odnosu na položaj plohe ili utjecaj atmosfere. Istraživanja Šúri i
+Hofierka (2004), Martins i dr. (2007), Amillo i dr. (2014) i Huld (2017) kao jednu
+od vrsta solarnog zračenja navode i obrađuju globalno horizontalno zračenje (engl.
+Global Horizontal Irradiation – GHI), koje je kao parametar solarnog potencijala
+također korišteno i u ovome radu. Istraživanjem solarnog potencijala bavili su se
+Kostoulas i dr. (2004), Vernay i dr. (2014) te Tahir i Asim (2018), koji su u svojim
+radovima predstavili najveće i najpouzdanije baze podataka solarnog zračenja (ta-
+blica 1).
+Istraživanjem različitih izvora podataka solarnog zračenja ustanovljeno je kako
+svaki od njih ima određena ograničenja, bilo pristupa i naknade za korištenje ili
+ograničenja prostorne rezolucije. Podaci solarnog zračenja dobiveni mjerenjem na
+Zemlji najbolji su podaci za određivanje solarnog potencijala u točki, ali za provo-
+đenje analize na širem prostoru nedovoljne su gustoće te zahtijevaju interpolaciju
+podataka koja smanjuje njihovu točnost. Nadalje, podaci solarnog zračenja izrađe-
+ni temeljem satelitskih opažanja MSG-a prostorne su rezolucije 5,6 km x 5,6 km
+(0,05° x 0,05°), koja nije dovoljna za potrebe energetskog planiranja. Upravo stoga
+za potrebe energetskog planiranja preporuča se modeliranje solarnog zračenja u
+većoj rezoluciji.
+•	difuzno horizontalno zračenje
+Morel, J. P. (2014c): Basic measurements of radiation at station Carpentras (2013-12),
+Centre Radiometrique, PANGAEA, Carpentras, France.
+Kina i ostale azijsko-pacifičke zemlje u 2016. godini pretekle su Europu i postale
+najveći proizvođači solarne energije u svijetu. Svoju dominaciju nastavile su u
+2017. godini i sada proizvode više od 55% svjetske solarne energije, dok se Europa
+nalazi na drugom mjestu među najvećim svjetskim proizvođačima solarne energi-
+je. Pregled 10 najvećih svjetskih proizvođača instaliranoga kapaciteta pokazuje
+kako Njemačka i dalje prednjači u iskorištavanju solarne energije u Europi, dok
+rezultati za Hrvatsku nisu dostupni (slika 2).
+Sjeverna
+Amerika, Europa,
+Afrika, dio Azije,
+Oceanija
+2.1. Izvanatmosfersko zračenje na horizontalnu plohu
+1 km
+30 min
+GHI, DHI,
+DNI
+komercijalan
+•	odbijeno horizontalno zračenje
+Focus solar
+Müller, R., Pfeifroth, U., Träger-Chatterjee, C., Trentmann, J., Cremer, R. (2015): Dig-
+ging the METEOSAT treasure – 3 decades of solar surface radiation, Remote
+Sensing, 7, 6, 8067–8101.
+•	globalno horizontalno zračenje.
+Izvanatmosfersko zračenje je solarno zračenje na gornjoj granici Zemljine atmos-
+fere, tj. pretpostavka je da Zemljina atmosfera ne postoji. S obzirom na to da se
+udaljenost Zemlje od Sunca mijenja tijekom godine, mijenja se i izvanatmosfersko
+zračenje od 1321 W/m2 do 1412 W/m2. Izvanatmosfersko zračenje okomito na Sun-
+čeve zrake za srednju udaljenost Zemlje od Sunca naziva se solarna konstanta
+(Matić 2007).
+Ključne riječi:	solarni potencijal, prostorni podaci, geoprostorne analize, GIS, ener-
+getsko planiranje, GHI.
+Europa, Afrika,
+dio Južne
+Amerike
+20 km
+dnevna
+GHI, DHI,
+DNI
+besplatan
+Helio-Clim-1
+(SoDa)
+3.1.1. Državni hidrometeorološki zavod
+Paulescu, M., Paulescu, E., Gravila, P., Badescu, V. (2012): Weather modeling and fore-
+casting of PV systems operation, Springer Science & Business Media, London,
+UK.
+2.2.1. Direktno horizontalno zračenje
+3.2. Modeliranje solarnog zračenja
+1	Dr. sc. Iva Gašparović, Državna geodetska uprava, Gruška 20, HR-10000 Zagreb, Hrvatska, e-mail: iva.gaspa-
+rovic@dgu.hr,
+2	Doc. dr. sc. Mateo Gašparović, Geodetski fakultet Sveučilišta u Zagrebu, Kačićeva 26, HR-10000 Zagreb, Hr-
+vatska, e-mail: mgasparovic@geof.hr,
+3	Prof. dr. sc. Damir Medak, Geodetski fakultet Sveučilišta u Zagrebu, Kačićeva 26, HR-10000 Zagreb, Hrvatska,
+e-mail: dmedak@geof.hr,
+4	Izv. prof. dr. sc. Mladen Zrinjski, Geodetski fakultet Sveučilišta u Zagrebu, Kačićeva 26, HR-10000 Zagreb,
+Hrvatska, e-mail: mzrinski@geof.hr.
+Mjerenje solarnog zračenja u Hrvatskoj započelo je 1948. godine na opservatoriju
+Zagreb-Grič, a 1949. godine uspostavljeno je mjerenje globalnoga solarnog zrače-
+nja na meteorološkim postajama Sljeme i Split. Mjerenja su tada bila neredovita
+te je vrlo malo podataka sačuvano, a u razdoblju od 1989. do 2003. godine mjerenje
+je prekinuto. Tek uspostavom mjerenja na postaji Parg 2003. godine ponovno za-
+počinje mjerenje globalnoga solarnog zračenja u Hrvatskoj (Matić 2007).
+Europa, Afrika,
+dio Južne
+Amerike
+3 km
+15 min
+GHI, DHI,
+GTI, DNI
+komercijalan
+(od 2005.)
+Helio-Clim-3
+(SoDa)
+Prema najnovijim podacima u Registar obnovljivih izvora energije i kogeneracije
+te povlaštenih proizvođača (Registar OIEKPP-a), koji vodi Ministarstvo zaštite
+okoliša i energetike, upisan je velik broj projekata koji se odnose na iskorištavanje
+solarne energije kroz solarne elektrane, fotonaponske sustave i solarne parkove
+(slika 3).
+Direktno horizontalno zračenje [engl. Beam (Direct) Horizontal Irradiation – BHI]
+može se definirati kao količina solarnog zračenja primljena od Sunca bez atmos-
+ferskog raspršenja (slika 4). Prolaskom elektromagnetskih valova kroz atmosferu
+dolazi do međudjelovanja s plinovima i česticama te se solarno zračenje može ap-
+sorbirati, odbiti ili nesmetano proći kroz atmosferu.
+Perez, R., Cebecauer, T., Šúri, M. (2013): Semi-Empirical Satellite Models, In Solar
+Energy Forecasting and Resource Assessment, Kleissl, J. (ed.), Elsevier, 21–48.
+Postoje mnogi modeli temeljem kojih se iz podataka satelitskih misija određuju
+vrijednosti solarnog zračenja na Zemlji, a dijelimo ih na fizikalne, empirijske i
+poluempirijske. Fizikalni modeli upotrebljavaju satelitske snimke i ostale atmos-
+ferske podatke da bi izračunali solarno zračenje koje prolazi kroz atmosferu.
+Land SAF
+Europa, Afrika,
+dio Južne
+Amerike
+3 km
+30 min
+GHI
+besplatan
+S obzirom na velik broj mogućih izvora podataka solarnog zračenja, odabrani su
+izvori koji su besplatno dostupni za područje Hrvatske te je napravljena njihova
+usporedba. Izuzevši modelirani GHI izračunat u Pythonu, a temeljen na modulu
+Dnevno izvanatmosfersko zračenje na horizontalnu plohu (H0) definirano je kao
+(Perić 2002):
+Slika 11.	GHI za kolovoz 2013. godine na području Hrvatske (a, c) mjeren temeljem MSG
+Perić, M. (2002): Računalna simulacija rada fotonaponskog sustava, magistarski rad,
+Fakultet elektrotehnike i računarstva Sveučilišta u Zagrebu, Zagreb.
+Slika 6. Mreža meteoroloških postaja u Republici Hrvatskoj (URL 4).
+satelita, (b, d) modeliran u GRASS GIS-u.
+Slika 10. Varijacija GHI-a za kolovoz 2013. godine na mjernoj postaji CAR.
+Slika 7. Lokacije postaja BSRN-a sa statusom rada u rujnu 2018. (URL 5).
+Slika 4. Globalno horizontalno zračenje (Gašparović 2018).",OSTALO

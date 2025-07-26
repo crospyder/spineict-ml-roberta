@@ -1,0 +1,1 @@
+{"accuracy": 0.9282945736434108, "precision": {"IRA": 1.0, "OSTALO": 1.0, "URA": 0.8892215568862275}, "recall": {"IRA": 1.0, "OSTALO": 0.0975609756097561, "URA": 1.0}, "f1_score": {"IRA": 1.0, "OSTALO": 0.17777777777777778, "URA": 0.9413629160063391}, "loss": null, "training_time_seconds": 0.09815216064453125, "epochs": 1}
